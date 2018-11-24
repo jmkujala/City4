@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
+&lt;Siri xmlns="http://www.siri.org.uk/siri" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3" &#13;
+	xsi:schemaLocation="http://www.kizoom.com/standards/siri/schema/1.3/siri.xsd"&gt;&#13;
+	&lt;ServiceRequest&gt;&#13;
+			&lt;VehicleMonitoringRequest version="1.3"&gt;&#13;
+				&lt;LineRef&gt;${LineRef}&lt;/LineRef&gt;&#13;
+			&lt;/VehicleMonitoringRequest&gt;&#13;
+	&lt;/ServiceRequest&gt;&#13;
+&lt;/Siri&gt;</content>
+        <function_name>Post</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Route line [ Post ]</qualified_name>
+        <rest_endpoint>http://data.itsfactory.fi/siriaccess/vm/siri</rest_endpoint>
+        <rest_message display_value="Route line">79e4eac4db4ae300f00ddf8b4b96194d</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-23 16:42:48</sys_created_on>
+        <sys_id>ae052ec4db4ae300f00ddf8b4b9619a2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Post</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_rest_message_fn_ae052ec4db4ae300f00ddf8b4b9619a2</sys_update_name>
+        <sys_updated_by>lasse.tuomi@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-23 17:38:47</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

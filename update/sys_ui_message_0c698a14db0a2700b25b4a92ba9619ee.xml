@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <key>Order your item here.</key>
+        <language>en</language>
+        <message>Order your item here.</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 09:20:24</sys_created_on>
+        <sys_id>0c698a14db0a2700b25b4a92ba9619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Order your item here.</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_ui_message_0c698a14db0a2700b25b4a92ba9619ee</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 09:20:24</sys_updated_on>
+    </sys_ui_message>
+</record_update>

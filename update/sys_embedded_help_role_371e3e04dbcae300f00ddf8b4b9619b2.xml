@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_smart_traffi.route_line_user" name="x_snc_smart_traffi.route_line_user">b31e3e04dbcae300f00ddf8b4b9619af</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-23 18:32:23</sys_created_on>
+        <sys_id>371e3e04dbcae300f00ddf8b4b9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b31e3e04dbcae300f00ddf8b4b9619af</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_embedded_help_role_371e3e04dbcae300f00ddf8b4b9619b2</sys_update_name>
+        <sys_updated_by>lasse.tuomi@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-23 18:32:23</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

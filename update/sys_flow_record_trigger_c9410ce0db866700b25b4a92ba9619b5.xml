@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_flow_record_trigger">
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sn_customerservice_case">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 18:04:13</sys_created_on>
+        <sys_id>c9410ce0db866700b25b4a92ba9619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_flow_record_trigger_c9410ce0db866700b25b4a92ba9619b5</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:04:13</sys_updated_on>
+        <table>sn_customerservice_case</table>
+    </sys_flow_record_trigger>
+</record_update>

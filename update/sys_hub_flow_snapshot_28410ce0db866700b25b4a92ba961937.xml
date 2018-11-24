@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_snapshot">
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>alert_from_case</internal_name>
+        <label_cache>[{"name":"b4abdd8b-e8e9-4ae6-a2b6-74bc0f70e694.Record.short_description","label":"2➛Work Order Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"wm_order","column_name":"short_description"},{"name":"b4abdd8b-e8e9-4ae6-a2b6-74bc0f70e694.Record.location","label":"2➛Work Order Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"wm_order","column_name":"location"},{"name":"1219889f-28f1-41e6-a622-4c546dab9da5.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"1219889f-28f1-41e6-a622-4c546dab9da5.Record","label":"3➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id"},{"name":"Created_1.current.description","label":"Trigger➛Case Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_customerservice_case","column_name":"description"},{"name":"Created_1.current.short_description","label":"Trigger➛Case Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"sn_customerservice_case","column_name":"short_description"},{"name":"Created_1.current.account","label":"Trigger➛Case Record➛Account","reference":"customer_account","reference_display":"Account","type":"reference","base_type":"reference","parent_table_name":"sn_customerservice_case","column_name":"account"},{"name":"Created_1.current","label":"Trigger➛Case Record","reference":"sn_customerservice_case","reference_display":"Case","type":"reference","base_type":"reference"},{"name":"fafed20c-3e50-4eb6-aefe-f2a14ecdf344.table_name","label":"1➛Alert Table","reference":"em_alert","reference_display":"Alert","type":"table_name","base_type":"table_name"},{"name":"fafed20c-3e50-4eb6-aefe-f2a14ecdf344.record","label":"1➛Alert Record","reference":"em_alert","reference_display":"Alert","type":"reference","base_type":"reference"},{"name":"b4abdd8b-e8e9-4ae6-a2b6-74bc0f70e694.Record","label":"2➛Work Order Record","reference":"wm_order","reference_display":"Work Order","type":"reference","base_type":"reference"},{"name":"b4abdd8b-e8e9-4ae6-a2b6-74bc0f70e694.Table","label":"2➛Work Order Table","reference":"wm_order","reference_display":"Work Order","type":"table_name","base_type":"table_name"},{"name":"Created_1.current.cmdb_ci","label":"Trigger➛Case Record➛Configuration item","reference":"cmdb_ci","reference_display":"Configuration Item","type":"reference","base_type":"reference","parent_table_name":"sn_customerservice_case","column_name":"cmdb_ci"},{"name":"Created_1.current.cmdb_ci.location","label":"Trigger➛Case Record➛Configuration item➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci","column_name":"location"}]</label_cache>
+        <master>true</master>
+        <name>Alert from Case</name>
+        <outputs/>
+        <parent_flow display_value="Alert from Case">4b4573dcdbca6700f00ddf8b4b961984</parent_flow>
+        <remote_trigger_id/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 18:04:11</sys_created_on>
+        <sys_id>28410ce0db866700b25b4a92ba961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Alert from Case</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_hub_flow_snapshot_28410ce0db866700b25b4a92ba961937</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:04:11</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=28410ce0db866700b25b4a92ba961937"/>
+    <sys_variable_value action="delete_multiple" query="document_key=28410ce0db866700b25b4a92ba961937"/>
+</record_update>

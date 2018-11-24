@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_smart_traffi.sensors_user" name="x_snc_smart_traffi.sensors_user">879fb5dcdb862700b25b4a92ba961924</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 08:37:45</sys_created_on>
+        <sys_id>0b9fb5dcdb862700b25b4a92ba961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>879fb5dcdb862700b25b4a92ba961924</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_embedded_help_role_0b9fb5dcdb862700b25b4a92ba961927</sys_update_name>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 08:37:45</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

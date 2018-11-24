@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="events" max_length="40" name="x_snc_smart_traffi_events" sizeclass="10000" type="collection">
+        <element attributes="import_attribute_name=Description,edge_encryption_enabled=true" label="Description" max_length="179" name="u_description" type="string"/>
+        <element attributes="import_attribute_name=error_msg" label="error_msg" max_length="40" name="u_error_msg" type="integer"/>
+        <element attributes="import_attribute_name=Message key,edge_encryption_enabled=true" label="Message key" max_length="68" name="u_message_key" type="string"/>
+        <element attributes="import_attribute_name=Metric Name,edge_encryption_enabled=true" label="Metric Name" max_length="40" name="u_metric_name" type="string"/>
+        <element attributes="import_attribute_name=Node,edge_encryption_enabled=true" label="Node" max_length="40" name="u_node" type="string"/>
+        <element attributes="import_attribute_name=Resource,edge_encryption_enabled=true" label="Resource" max_length="40" name="u_resource" type="string"/>
+        <element attributes="import_attribute_name=Severity,edge_encryption_enabled=true" label="Severity" max_length="40" name="u_severity" type="string"/>
+        <element attributes="import_attribute_name=Source,edge_encryption_enabled=true" label="Source" max_length="40" name="u_source" type="string"/>
+        <element attributes="import_attribute_name=State,edge_encryption_enabled=true" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="import_attribute_name=Time of event" label="Time of event" max_length="40" name="u_time_of_event" type="glide_date_time"/>
+        <element attributes="import_attribute_name=Type,edge_encryption_enabled=true" label="Type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

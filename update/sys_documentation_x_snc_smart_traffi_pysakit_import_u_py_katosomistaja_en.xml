@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_py_katosomistaja" label="PY_KATOSOMISTAJA" language="en" table="x_snc_smart_traffi_pysakit_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_py_katosomistaja</element>
+            <help/>
+            <hint/>
+            <label>PY_KATOSOMISTAJA</label>
+            <language>en</language>
+            <name>x_snc_smart_traffi_pysakit_import</name>
+            <plural>PY_KATOSOMISTAJAs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+            <sys_created_on>2018-11-23 18:51:23</sys_created_on>
+            <sys_id>d272c30cdbcae300f00ddf8b4b961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>PY_KATOSOMISTAJA</sys_name>
+            <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_smart_traffi_pysakit_import_u_py_katosomistaja_en</sys_update_name>
+            <sys_updated_by>lasse.tuomi@sofigate.com</sys_updated_by>
+            <sys_updated_on>2018-11-23 18:51:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

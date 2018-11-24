@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Route line" max_length="40" name="x_snc_smart_traffi_route_line" type="collection">
+        <element label="geoloc" max_length="4000" name="geoloc" type="string"/>
+        <element label="Geoloc json" max_length="800" name="geoloc_json" type="data_structure"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element display="true" label="Route" max_length="40" name="route" type="string"/>
+    </element>
+</database>

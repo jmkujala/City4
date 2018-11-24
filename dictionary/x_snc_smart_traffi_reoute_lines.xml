@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Reoute lines" max_length="40" name="x_snc_smart_traffi_reoute_lines" type="collection">
+        <element attributes="import_attribute_name=route_long_name,edge_encryption_enabled=true" label="route_long_name" max_length="50" name="u_route_long_name" type="string"/>
+        <element attributes="import_attribute_name=route_short_name,edge_encryption_enabled=true" label="route_short_name" max_length="40" name="u_route_short_name" type="string"/>
+        <element attributes="import_attribute_name=route_type" label="route_type" max_length="40" name="u_route_type" type="integer"/>
+    </element>
+</database>

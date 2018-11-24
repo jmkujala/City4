@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Weather Station</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Weather Station</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Base Configuration Item" name="Base Configuration Item">df03063adb312300f00ddf8b4b961923</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 09:00:56</sys_created_on>
+        <sys_id>7ae4865cdbc62700b25b4a92ba961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weather Station</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_wizard_answer_7ae4865cdbc62700b25b4a92ba961939</sys_update_name>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 09:00:56</sys_updated_on>
+        <table/>
+        <target_url>x_snc_smart_traffi_weather_station.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

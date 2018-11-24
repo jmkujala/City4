@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Bike Case">74714f88db0ae300b25b4a92ba961902</sc_cat_item>
+        <sc_category display_value="Support">1b8611d5c3921200b0449f2974d3ae12</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-23 18:46:55</sys_created_on>
+        <sys_id>7c714f88db0ae300b25b4a92ba9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Support.Create Product Case</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sc_cat_item_category_7c714f88db0ae300b25b4a92ba9619b9</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-23 18:46:55</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

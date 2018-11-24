@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmn_location" label="Bus stop" max_length="40" name="x_snc_smart_traffi_bus_stop" type="collection">
+        <element label="Bustop name" max_length="100" name="bustop_name" type="string"/>
+        <element label="geoloc" max_length="1000" name="geoloc" type="string"/>
+        <element label="ID" max_length="40" name="id" type="string"/>
+        <element label="Street name" max_length="100" name="street_name" type="string"/>
+    </element>
+</database>

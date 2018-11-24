@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">1a8df240db0ae300b25b4a92ba9619f8</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 11:12:17</sys_created_on>
+        <sys_id>3af22a10dbca2700b25b4a92ba9619f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sp_instance_3af22a10dbca2700b25b4a92ba9619f1</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 16:53:34</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<p style=\"text-align: center;\"><img style=\"max-width: 100%; max-height: 480px;\" src=\"21113754dbc26700b25b4a92ba96192e.iix\" /></p>",
+		"displayValue": "<p style=\"text-align: center;\"><img style=\"max-width: 100%; max-height: 480px;\" src=\"21113754dbc26700b25b4a92ba96192e.iix\" /></p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=3af22a10dbca2700b25b4a92ba9619f1"/>
+</record_update>

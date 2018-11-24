@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>$csm-primary-text-size: 14px;&#13;
+$csm-danger-bg: #FAE6E6;&#13;
+$csm-danger-dark: #9D0010;&#13;
+$csm-danger-light: #E34249;&#13;
+$csm-border-color: #E6E8EA;&#13;
+$csm-danger-border: #F7D8D8;&#13;
+$csm-box-shadow : #CFD4D8;&#13;
+$csm-icon-color: #CFD4D8;&#13;
+$csm-navbar-popover-box-shadow-color: #CFD4D8;&#13;
+$csm-navbar-popover-separator-line-color: #E6E8EA;&#13;
+$csm-navbar-global-user-profile-dropdown-border: #DDDDDD;&#13;
+$csm-navbar-panel-separator-color: #828890;&#13;
+$csm-tags-bg: #E6E8EA;&#13;
+$csm-author-badge-bg: #6D79E8;&#13;
+$csm-well-bg: #F9F9F9;&#13;
+$csm-well-success : #F0FBF0;&#13;
+$csm-profile-privacy-select-readonly-bg: #EEEEEE;&#13;
+$search-link-color: $brand-primary;&#13;
+$search-alternate-text-color: #3A3F51;&#13;
+$search-primary-text-size: 13px;&#13;
+$csm-secondary-header-bg:#636b74;&#13;
+</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header/>
+        <name>driver</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 13:12:17</sys_created_on>
+        <sys_id>647e7e14db066700f00ddf8b4b96192d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>driver</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sp_theme_647e7e14db066700f00ddf8b4b96192d</sys_update_name>
+        <sys_updated_by>lasse.tuomi@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 13:12:28</sys_updated_on>
+    </sp_theme>
+</record_update>

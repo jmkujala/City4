@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="pysakit import" max_length="40" name="x_snc_smart_traffi_pysakit_import" type="collection">
+        <element attributes="import_attribute_name=FID,edge_encryption_enabled=true" label="FID" max_length="40" name="u_fid" type="string"/>
+        <element attributes="import_attribute_name=GEOM,edge_encryption_enabled=true" label="GEOM" max_length="41" name="u_geom" type="string"/>
+        <element attributes="import_attribute_name=MUUTETTU,edge_encryption_enabled=true" label="MUUTETTU" max_length="40" name="u_muutettu" type="string"/>
+        <element attributes="import_attribute_name=POISTETTU,edge_encryption_enabled=true" label="POISTETTU" max_length="40" name="u_poistettu" type="string"/>
+        <element attributes="import_attribute_name=PY_AIKATAULUVITRIINI,edge_encryption_enabled=true" label="PY_AIKATAULUVITRIINI" max_length="40" name="u_py_aikatauluvitriini" type="string"/>
+        <element attributes="import_attribute_name=PY_DIGIROADID,edge_encryption_enabled=true" label="PY_DIGIROADID" max_length="40" name="u_py_digiroadid" type="string"/>
+        <element attributes="import_attribute_name=PY_EIKAYTOSSA,edge_encryption_enabled=true" label="PY_EIKAYTOSSA" max_length="40" name="u_py_eikaytossa" type="string"/>
+        <element attributes="import_attribute_name=PY_KADUNPITAJA,edge_encryption_enabled=true" label="PY_KADUNPITAJA" max_length="40" name="u_py_kadunpitaja" type="string"/>
+        <element attributes="import_attribute_name=PY_KATOSOMISTAJA,edge_encryption_enabled=true" label="PY_KATOSOMISTAJA" max_length="40" name="u_py_katosomistaja" type="string"/>
+        <element attributes="import_attribute_name=PY_KATOSTYYPPI,edge_encryption_enabled=true" label="PY_KATOSTYYPPI" max_length="40" name="u_py_katostyyppi" type="string"/>
+        <element attributes="import_attribute_name=PY_KATOSYLLAPITO,edge_encryption_enabled=true" label="PY_KATOSYLLAPITO" max_length="40" name="u_py_katosyllapito" type="string"/>
+        <element attributes="import_attribute_name=PY_KUNTA,edge_encryption_enabled=true" label="PY_KUNTA" max_length="40" name="u_py_kunta" type="string"/>
+        <element attributes="import_attribute_name=PY_KUNTAKOODI,edge_encryption_enabled=true" label="PY_KUNTAKOODI" max_length="40" name="u_py_kuntakoodi" type="string"/>
+        <element attributes="import_attribute_name=PY_LYHENNE,edge_encryption_enabled=true" label="PY_LYHENNE" max_length="40" name="u_py_lyhenne" type="string"/>
+        <element attributes="import_attribute_name=PY_NIMI,edge_encryption_enabled=true" label="PY_NIMI" max_length="40" name="u_py_nimi" type="string"/>
+        <element attributes="import_attribute_name=PY_ONKATOS,edge_encryption_enabled=true" label="PY_ONKATOS" max_length="40" name="u_py_onkatos" type="string"/>
+        <element attributes="import_attribute_name=PY_OSOITE,edge_encryption_enabled=true" label="PY_OSOITE" max_length="40" name="u_py_osoite" type="string"/>
+        <element attributes="import_attribute_name=PY_PAATEPYS,edge_encryption_enabled=true" label="PY_PAATEPYS" max_length="40" name="u_py_paatepys" type="string"/>
+        <element attributes="import_attribute_name=PY_PYORAKATOS,edge_encryption_enabled=true" label="PY_PYORAKATOS" max_length="40" name="u_py_pyorakatos" type="string"/>
+        <element attributes="import_attribute_name=PY_PYSAKKIRYHMA,edge_encryption_enabled=true" label="PY_PYSAKKIRYHMA" max_length="40" name="u_py_pysakkiryhma" type="string"/>
+        <element attributes="import_attribute_name=PY_TARIFFIVYOHYKE,edge_encryption_enabled=true" label="PY_TARIFFIVYOHYKE" max_length="40" name="u_py_tariffivyohyke" type="string"/>
+        <element attributes="import_attribute_name=PY_TUNNISTE,edge_encryption_enabled=true" label="PY_TUNNISTE" max_length="40" name="u_py_tunniste" type="string"/>
+        <element attributes="import_attribute_name=PY_TYYPPI,edge_encryption_enabled=true" label="PY_TYYPPI" max_length="40" name="u_py_tyyppi" type="string"/>
+        <element attributes="import_attribute_name=PY_TYYPPINIMI,edge_encryption_enabled=true" label="PY_TYYPPINIMI" max_length="52" name="u_py_tyyppinimi" type="string"/>
+        <element attributes="import_attribute_name=PY_VIRANOMAINEN,edge_encryption_enabled=true" label="PY_VIRANOMAINEN" max_length="40" name="u_py_viranomainen" type="string"/>
+        <element attributes="import_attribute_name=PY_WC,edge_encryption_enabled=true" label="PY_WC" max_length="40" name="u_py_wc" type="string"/>
+        <element attributes="import_attribute_name=PY_XKOORDINAATTI,edge_encryption_enabled=true" label="PY_XKOORDINAATTI" max_length="40" name="u_py_xkoordinaatti" type="string"/>
+        <element attributes="import_attribute_name=PY_YKOORDINAATTI,edge_encryption_enabled=true" label="PY_YKOORDINAATTI" max_length="40" name="u_py_ykoordinaatti" type="string"/>
+        <element attributes="import_attribute_name=TEHTY,edge_encryption_enabled=true" label="TEHTY" max_length="40" name="u_tehty" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 15:56:08</sys_created_on>
+        <sys_id>f4f32b50db826700b25b4a92ba9619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SysList</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_scope_privilege_f4f32b50db826700b25b4a92ba9619ce</sys_update_name>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 15:56:08</sys_updated_on>
+        <target_name>SysList</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>

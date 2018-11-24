@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Line Stop M2M" max_length="40" name="x_snc_smart_traffi_line_stop_m2m" type="collection">
+        <element label="Bus stop" max_length="32" name="bus_stop" reference="x_snc_smart_traffi_bus_stop" type="reference"/>
+        <element label="Order" max_length="40" name="order" type="integer"/>
+        <element label="Route" max_length="32" name="route" reference="x_snc_smart_traffi_route_line" type="reference"/>
+        <index name="index">
+            <element name="route"/>
+        </index>
+        <index name="index2">
+            <element name="bus_stop"/>
+        </index>
+    </element>
+</database>

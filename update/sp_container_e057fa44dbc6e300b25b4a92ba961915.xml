@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>bicycle_front - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="bicycle_front">93a6fe80dbc6e300b25b4a92ba9619e2</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-23 18:02:40</sys_created_on>
+        <sys_id>e057fa44dbc6e300b25b4a92ba961915</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>bicycle_front - Container 2</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sp_container_e057fa44dbc6e300b25b4a92ba961915</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-23 18:03:10</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

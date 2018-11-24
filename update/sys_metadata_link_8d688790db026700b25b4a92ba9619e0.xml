@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2b71a502b705f02b736f02b79fa02b7e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_worktask_product_model">
+    <cmdb_worktask_product_model action="INSERT_OR_UPDATE">
+        <acquisition_method/>
+        <asset_tracking_strategy>leave_to_category</asset_tracking_strategy>
+        <assignment_group/>
+        <barcode/>
+        <bundle>false</bundle>
+        <certified>false</certified>
+        <checklist_template/>
+        <cmdb_ci_class/>
+        <cmdb_model_category>98b44470d7311100158ba6859e610353</cmdb_model_category>
+        <comments/>
+        <company/>
+        <cost>0</cost>
+        <customer_visible>false</customer_visible>
+        <depreciation/>
+        <description/>
+        <dispatch_group display_value="Hervanta Dispatchers" name="Hervanta Dispatchers">65d9f63237232000158bbfc8bcbe5dc4</dispatch_group>
+        <display_name>Waste Bin emptying</display_name>
+        <expenditure_type/>
+        <flow_rate/>
+        <full_name/>
+        <is_migrated>true</is_migrated>
+        <main_component/>
+        <manufacturer/>
+        <model_number/>
+        <name>Waste Bin emptying</name>
+        <owner/>
+        <picture/>
+        <power_consumption/>
+        <product_catalog_item/>
+        <rack_units>1</rack_units>
+        <salvage_value>0</salvage_value>
+        <short_description>Waste Bin emptying</short_description>
+        <sla/>
+        <sound_power/>
+        <status>In Production</status>
+        <sys_class_name>cmdb_worktask_product_model</sys_class_name>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 13:55:44</sys_created_on>
+        <sys_id>2b71a502b705f02b736f02b79fa02b7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 13:55:44</sys_updated_on>
+        <task_description>Waste Bin emptying</task_description>
+        <task_estimated_duration/>
+        <task_skills/>
+        <type>Generic</type>
+        <weight/>
+    </cmdb_worktask_product_model>
+    <fx_price action="delete_multiple" query="id=2b71a502b705f02b736f02b79fa02b7e"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>cost</field>
+        <id>2b71a502b705f02b736f02b79fa02b7e</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 13:55:44</sys_created_on>
+        <sys_id>0d688790db026700b25b4a92ba9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 13:55:44</sys_updated_on>
+        <table>cmdb_worktask_product_model</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_translated_text action="delete_multiple" query="documentkey=2b71a502b705f02b736f02b79fa02b7e"/>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 13:55:44</sys_created_on>
+        <sys_id>8d688790db026700b25b4a92ba9619e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Waste Bin emptying</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_metadata_link_8d688790db026700b25b4a92ba9619e0</sys_update_name>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 13:55:44</sys_updated_on>
+        <tablename>cmdb_worktask_product_model</tablename>
+    </sys_metadata_link>
+</record_update>

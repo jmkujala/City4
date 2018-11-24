@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>05688790db026700b25b4a92ba9619e2</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sm_m2m_somodel_stmodel">
+    <sm_m2m_somodel_stmodel action="INSERT_OR_UPDATE">
+        <order>0</order>
+        <so_model display_value="Waste Bin emptying">f8688790db026700b25b4a92ba961994</so_model>
+        <st_model display_value="Waste Bin emptying">2b71a502b705f02b736f02b79fa02b7e</st_model>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 13:55:44</sys_created_on>
+        <sys_id>05688790db026700b25b4a92ba9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 13:55:44</sys_updated_on>
+    </sm_m2m_somodel_stmodel>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 13:55:44</sys_created_on>
+        <sys_id>c9688790db026700b25b4a92ba9619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-11-24 05:55:44</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_metadata_link_c9688790db026700b25b4a92ba9619e4</sys_update_name>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 13:55:44</sys_updated_on>
+        <tablename>sm_m2m_somodel_stmodel</tablename>
+    </sys_metadata_link>
+</record_update>

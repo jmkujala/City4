@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Copy of CSM Unified Portal Header Menu W">a5286e18dbca2700b25b4a92ba961942</child>
+        <cloned>2018-11-24 11:34:52</cloned>
+        <last_validated>2018-11-24 11:34:52</last_validated>
+        <parent display_value="CSM Unified Portal Header Menu Widget">075187ae3b103200367aee1234efc462</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category/&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, spUtil, $rootScope, $timeout, csmUnifiedDeviceType) {
+
+	$scope.isMobileView = csmUnifiedDeviceType.isMobileView;
+	$scope.maxPopoverCols = 5;
+
+/*			
+	// Get list of record watchers
+	var record_watchers = [];
+	if ($scope.data.menu.items) {
+		for(var i in $scope.data.menu.items) {
+			var item = $scope.data.menu.items[i];
+			if (item.type == 'scripted') {
+				if (item.scriptedItems.record_watchers)
+					record_watchers = record_watchers.concat(item.scriptedItems.record_watchers);
+			}
+			if (item.type == 'filtered') {
+				record_watchers.push({'table':item.table,'filter':item.filter});
+			}
+		}
+	}
+
+	// Init record watchers
+	for (var y in record_watchers){
+		var watcher = record_watchers[y];
+		spUtil.recordWatch($scope, watcher.table, watcher.filter);
+	}
+*/	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.unifiedMenuPrimaryMenuItem {&amp;#13;
+  	padding-right: 40px;&amp;#13;
+  	color: $navbar-inverse-link-color;&amp;#13;
+}&amp;#13;
+  &amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem &amp;gt; a {&amp;#13;
+	padding-top: 0px;&amp;#13;
+  	padding-bottom: 0px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuText {&amp;#13;
+    color: $navbar-inverse-link-color;&amp;#13;
+#    color: $csm-navbar-text-color;&amp;#13;
+  	font-weight: 400;&amp;#13;
+}&amp;#13;
+  &amp;#13;
+.unifiedMenuPrimaryMenuText:focus, .unifiedMenuPrimaryMenuText:hover {&amp;#13;
+    color: $navbar-inverse-link-hover-color;  &amp;#13;
+#    color: $csm-navbar-text-color-selected;&amp;#13;
+    text-decoration: none;&amp;#13;
+}  &amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem:focus, .unifiedMenuPrimaryMenuItem:hover {&amp;#13;
+  color: $navbar-inverse-link-hover-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem .popover.bottom &amp;gt; .arrow:after {&amp;#13;
+#	border-bottom-color: $csm-navbar-popover-background-color;&amp;#13;
+  	border-bottom-color: $panel-bg;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem .popover {&amp;#13;
+#  background-color: $csm-navbar-popover-background-color;&amp;#13;
+  background-color: $panel-bg;&amp;#13;
+  border: none;&amp;#13;
+  box-shadow: 0 2px 4px 0 $csm-navbar-popover-box-shadow-color;&amp;#13;
+  font-family: inherit;&amp;#13;
+  border-radius: 3px;&amp;#13;
+  &amp;#13;
+   .popoverText {&amp;#13;
+#	    color: $csm-navbar-popover-text-color;&amp;#13;
+   }&amp;#13;
+  &amp;#13;
+  .popover-separator-line {&amp;#13;
+    border-bottom: 1px solid $text-muted;&amp;#13;
+    padding-bottom: 7px;&amp;#13;
+    width: 125%&amp;#13;
+    margin-bottom: 10px;&amp;#13;
+    border-color: #E6E8EA;&amp;#13;
+    min-width: 100px;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .popoverHeader h5 {&amp;#13;
+	margin-top: 0px;&amp;#13;
+    margin-bottom: 0px;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .popoverCsmHeader {&amp;#13;
+    color: $text-color;&amp;#13;
+#    color: $csm-navbar-popover-separator-text-color;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .popover-content {&amp;#13;
+  	padding-left: 30px;&amp;#13;
+    padding-top: 20px;&amp;#13;
+    padding-bottom: 30px;&amp;#13;
+    padding-right: 30px;&amp;#13;
+    letter-spacing: 1px;    &amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .popoverSubItem1 {&amp;#13;
+  	padding-top: 13px;&amp;#13;
+    white-space: nowrap;&amp;#13;
+  }  &amp;#13;
+  &amp;#13;
+  .popoverSubItem2 {&amp;#13;
+    padding-top: 13px;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .popoverItemSeparator {&amp;#13;
+     padding-top: 12px;&amp;#13;
+     color: $text-muted;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .popoverMenu {&amp;#13;
+      .popoverContent {&amp;#13;
+          display: table-row;&amp;#13;
+      }&amp;#13;
+&amp;#13;
+      .popoverContentColumn {&amp;#13;
+          display: table-cell;&amp;#13;
+          padding-right:50px;&amp;#13;
+          white-space: nowrap;&amp;#13;
+      }&amp;#13;
+    &amp;#13;
+	  [class~='popoverContentColumn']:last-of-type  {&amp;#13;
+          padding-right: 0px;&amp;#13;
+      }&amp;#13;
+&amp;#13;
+      ul {&amp;#13;
+          padding-left: 0px;&amp;#13;
+      }&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.csm-unified-mobile-menu  .unified-mobile-header-menu-level3-item {  &amp;#13;
+  	border-bottom: 0.5px solid #828890;	&amp;#13;
+  	border-color: $csm-navbar-panel-separator-color;&amp;#13;
+    border-radius: 0px;  	&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-mobile-header-menu-level3-item h4 {&amp;#13;
+  	padding-left: 20px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.csm-unified-mobile-menu .panel-body li {&amp;#13;
+  	list-style-type: none;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-mobile-header-menu-level3 .panel-heading h4 {&amp;#13;
+  	cursor: default;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-mobile-header-menu-level3 .panel .panel-heading,&amp;#13;
+.unified-mobile-header-menu-level3-item {&amp;#13;
+  	padding-left: 40px;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance_menu&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;csm-unified-portal-header-menu-widget&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;CSM Unified Portal Header Menu Widget&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function(){
+	// build menus
+	var menu_id = $sp.getValue('sys_id'); // instance sys_id
+	data.menu = {};
+	data.menu.items = $sp.getMenuItems(menu_id);
+	
+	var hasSubItems = function (elem, ind, arr) { 
+		return elem.items &amp;&amp; elem.items.length &gt; 0;
+	};
+	
+	// For an item to be a header, it should 
+	// - have subitems and 
+	// - should not have a page or url defined (type == "page" or "url" with no href value)
+	var isHeaderItem = function(item) {
+		if (!item) {
+			return false;
+		}
+		
+		return (hasSubItems(item) &amp;&amp; 
+			    ((item.type === 'page' &amp;&amp; item.href === '?id=') || 
+			    (item.type === 'url' &amp;&amp; item.href === ''))
+			   );
+	};
+
+	var determineHeaderItems = function(itemsLevel2) {
+		if (!itemsLevel2) {
+			return;
+		}
+		
+		// Only level2 and level3 items can act as headers
+		itemsLevel2.forEach(function(itemLevel2) {
+			itemLevel2.isHeader = isHeaderItem(itemLevel2);
+			
+			var itemsLevel3 = itemLevel2.items;
+			if (itemsLevel3) {
+				itemsLevel3.forEach(function(itemLevel3) {
+					itemLevel3.isHeader = isHeaderItem(itemLevel3);
+				});
+			}		
+		});
+	};
+		
+	for (var i in data.menu.items) {
+		var item = data.menu.items[i];
+		
+		// If level2 does not have subitems, ie there is no level3 &amp; level4
+		// then render everything in one column
+		item.renderInOneColumn = item.items &amp;&amp; !item.items.some(hasSubItems);
+		
+		determineHeaderItems(item.items);
+	}	
+	
+
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-01-17 00:48:00&lt;/sys_created_on&gt;&lt;sys_id&gt;075187ae3b103200367aee1234efc462&lt;/sys_id&gt;&lt;sys_mod_count&gt;392&lt;/sys_mod_count&gt;&lt;sys_name&gt;CSM Unified Portal Header Menu Widget&lt;/sys_name&gt;&lt;sys_package display_value="Customer Service Management Unified Theme" source="sn_csm_uni_theme"&gt;fec7d1c753a032007a97e192d5dc343e&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Customer Service Management Unified Theme"&gt;fec7d1c753a032007a97e192d5dc343e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_075187ae3b103200367aee1234efc462&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-03-09 06:24:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;ul class="nav navbar-nav"&gt;
+  &lt;li ng-if="::!isMobileView()" ng-repeat="item in ::data.menu.items" ng-include="'unifiedMenuTemplate'"&gt;&lt;/li&gt;
+  &lt;div ng-if="::isMobileView()" ng-init="menu=data.menu" ng-include="'unifiedMenuMobileTemplate'"&gt;&lt;/div&gt;
+    &lt;!-- Printing the menu in hidden state for SEO--&gt;
+  &lt;li class="hide" ng-repeat="item in ::data.menu.items" ng-include="'unifiedMenuPopoverTemplate'"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 11:34:52</sys_created_on>
+        <sys_id>b528ee18dbca2700b25b4a92ba961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a5286e18dbca2700b25b4a92ba961942</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_b528ee18dbca2700b25b4a92ba961956</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 11:34:52</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

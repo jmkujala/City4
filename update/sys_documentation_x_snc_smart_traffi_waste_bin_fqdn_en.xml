@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="fqdn" label="Fully qualified domain name" language="en" table="x_snc_smart_traffi_waste_bin">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>fqdn</element>
+            <help/>
+            <hint/>
+            <label>Fully qualified domain name</label>
+            <language>en</language>
+            <name>x_snc_smart_traffi_waste_bin</name>
+            <plural>Fully qualified domain names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+            <sys_created_on>2018-11-23 18:30:26</sys_created_on>
+            <sys_id>1fadba40db0ae300b25b4a92ba961954</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Fully qualified domain name</sys_name>
+            <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_smart_traffi_waste_bin_fqdn_en</sys_update_name>
+            <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+            <sys_updated_on>2018-11-23 18:30:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

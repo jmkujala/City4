@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_skill_contains">
+    <cmn_skill_contains action="INSERT_OR_UPDATE">
+        <contains display_value="Field Service">91d8323e7f132200c57212f44efa9145</contains>
+        <name>Tram Wheel re-profiling - Field Service</name>
+        <skill display_value="Tram Wheel re-profiling">0ac4f610db4e2700b25b4a92ba961988</skill>
+        <sys_class_name>cmn_skill_contains</sys_class_name>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 12:30:03</sys_created_on>
+        <sys_id>8ac4f610db4e2700b25b4a92ba96198a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Field Service.Tram Wheel re-profiling</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>cmn_skill_contains_8ac4f610db4e2700b25b4a92ba96198a</sys_update_name>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 12:30:03</sys_updated_on>
+    </cmn_skill_contains>
+</record_update>

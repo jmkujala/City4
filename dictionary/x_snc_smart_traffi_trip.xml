@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Trip" max_length="40" name="x_snc_smart_traffi_trip" sizeclass="18228" type="collection">
+        <element label="Average trip length" max_length="20" name="average_trip_length" type="decimal"/>
+        <element label="Direction" max_length="8000" name="direction" type="string"/>
+        <element label="Passanger count" max_length="40" name="passanger_count" type="integer"/>
+        <element label="Route" max_length="32" name="route" reference="x_snc_smart_traffi_route_line" type="reference"/>
+        <element label="Route Id" max_length="40" name="route_id" type="string"/>
+        <element label="Route length" max_length="20" name="route_length" type="decimal"/>
+        <element label="Service id" max_length="40" name="service_id" type="string"/>
+        <element label="Trip headsign" max_length="40" name="trip_headsign" type="string"/>
+        <element display="true" label="Trip Id" max_length="40" name="trip_id" type="string"/>
+        <index name="index">
+            <element name="route"/>
+        </index>
+    </element>
+</database>

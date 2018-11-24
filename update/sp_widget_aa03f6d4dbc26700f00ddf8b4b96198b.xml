@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.center{&#13;
+  margin-left:auto;&#13;
+  margin-right:auto;&#13;
+  text-align:center;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>driver menu</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.trip_id = '25328e18dbca2700f00ddf8b4b961984';
+	var gr = new GlideRecord('x_snc_smart_traffi_route_line');
+	gr.addQuery('sys_id', data.trip_id);
+	gr.query();
+	while(gr.next()){
+		data.route_name = gr.getValue('name');
+			data.route_id = gr.getValue('route');
+	
+	}
+	
+
+	data.diary_active = true;
+	if(data.diary_active == true)
+		data.diary_status = 'Active';
+	else
+		data.diary_status = 'Inactive';
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 12:23:42</sys_created_on>
+        <sys_id>aa03f6d4dbc26700f00ddf8b4b96198b</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>driver menu</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sp_widget_aa03f6d4dbc26700f00ddf8b4b96198b</sys_update_name>
+        <sys_updated_by>lasse.tuomi@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 15:52:22</sys_updated_on>
+        <template><![CDATA[<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+         <strong> ${Driving diary} </strong>
+        <br />
+
+        {{c.data.diary_status}}
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-md-12" class="center">
+        <a href="?id=bus_route">
+          <strong>${Route} {{c.data.route_id}}</strong><br />
+        <span>{{c.data.route_name}}</span>
+        </a>
+       </div>
+    
+    
+     <div class="row">
+      <div class="col-md-12">
+        <div class="">
+        <h3 class="center">${Report} </h3>
+        </div>
+    </div>
+       <div class="row">
+      <div class="col-xs-6">
+        <div class="menu-link-button center">
+          <a href="?id=sc_cat_item&sys_id=42268698db4e2700f00ddf8b4b961976">
+<img src="sec_issue.png" width="128" height="127"/>
+          </a>
+        </div>
+           </div>
+         <div class="col-xs-6">
+        <div class="menu-link-button center">
+<img src="cleanup.png" width="134" height="132"/>
+           </div>
+             </div>
+          <div class="col-xs-6">
+        <div class="menu-link-button center">
+<img src="damage.png" width="137" height="134"/>
+              </div>
+           </div>
+               <div class="col-xs-6">
+        <div class="menu-link-button center">
+<img src="late.png" width="130" height="137"/>
+                 </div>
+           </div>
+    </div>       
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Alerts" max_length="40" name="x_snc_smart_traffi_alerts" type="collection">
+        <element attributes="import_attribute_name=Acknowledged,edge_encryption_enabled=true" label="Acknowledged" max_length="40" name="u_acknowledged" type="string"/>
+        <element attributes="import_attribute_name=Category,edge_encryption_enabled=true" label="Category" max_length="40" name="u_category" type="string"/>
+        <element attributes="import_attribute_name=Configuration item,edge_encryption_enabled=true" label="Configuration item" max_length="40" name="u_configuration_item" type="string"/>
+        <element attributes="import_attribute_name=Impacted Services" label="Impacted Services" max_length="40" name="u_impacted_services" type="integer"/>
+        <element attributes="import_attribute_name=Initial event time" label="Initial event time" max_length="40" name="u_initial_event_time" type="glide_date_time"/>
+        <element attributes="import_attribute_name=Metric Name,edge_encryption_enabled=true" label="Metric Name" max_length="40" name="u_metric_name" type="string"/>
+        <element attributes="import_attribute_name=Node,edge_encryption_enabled=true" label="Node" max_length="40" name="u_node" type="string"/>
+        <element attributes="import_attribute_name=Number,edge_encryption_enabled=true" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="import_attribute_name=Resource,edge_encryption_enabled=true" label="Resource" max_length="40" name="u_resource" type="string"/>
+        <element attributes="import_attribute_name=Severity,edge_encryption_enabled=true" label="Severity" max_length="40" name="u_severity" type="string"/>
+        <element attributes="import_attribute_name=Source,edge_encryption_enabled=true" label="Source" max_length="40" name="u_source" type="string"/>
+        <element attributes="import_attribute_name=State,edge_encryption_enabled=true" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="import_attribute_name=Task,edge_encryption_enabled=true" label="Task" max_length="40" name="u_task" type="string"/>
+        <element attributes="import_attribute_name=Type,edge_encryption_enabled=true" label="Type" max_length="40" name="u_type" type="string"/>
+        <element attributes="import_attribute_name=Updated" label="Updated" max_length="40" name="u_updated" type="glide_date_time"/>
+    </element>
+</database>

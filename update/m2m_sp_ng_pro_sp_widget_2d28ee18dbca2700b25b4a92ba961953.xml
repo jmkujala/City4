@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="csmUnifiedDeviceType">8cc4efbec330320034d2d44d81d3ae36</sp_angular_provider>
+        <sp_widget display_value="Copy of CSM Unified Portal Header Menu W">a5286e18dbca2700b25b4a92ba961942</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 11:34:52</sys_created_on>
+        <sys_id>2d28ee18dbca2700b25b4a92ba961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>csmUnifiedDeviceType.Copy of CSM Unified Portal Header Menu W</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_2d28ee18dbca2700b25b4a92ba961953</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 11:34:52</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>

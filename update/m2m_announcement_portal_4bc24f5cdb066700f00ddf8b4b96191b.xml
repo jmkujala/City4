@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_announcement_portal">
+    <m2m_announcement_portal action="INSERT_OR_UPDATE">
+        <announcement display_value="Tietyöt häiritsevät reitillä">26a28b5cdb066700f00ddf8b4b9619a8</announcement>
+        <order>100</order>
+        <sp_portal display_value="Driver portal">d05c061cdbce2700f00ddf8b4b961950</sp_portal>
+        <sys_class_name>m2m_announcement_portal</sys_class_name>
+        <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 13:37:23</sys_created_on>
+        <sys_id>4bc24f5cdb066700f00ddf8b4b96191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tietyöt häiritsevät reitillä.Driver portal</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>m2m_announcement_portal_4bc24f5cdb066700f00ddf8b4b96191b</sys_update_name>
+        <sys_updated_by>lasse.tuomi@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 13:37:23</sys_updated_on>
+    </m2m_announcement_portal>
+</record_update>

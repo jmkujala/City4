@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>#homepage-search h1 { font-size: 40px; font-weight: normal; font-family: SourceSansPro; text-align: left;}&#13;
+#homepage-search h4 { font-size: 30px; font-weight: lighter; font-family: SourceSansPro; text-align: left;}</css>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description>We're always here to help.</short_description>
+        <size>md</size>
+        <sp_column display_value="1">95787ac4dbc6e300b25b4a92ba961977</sp_column>
+        <sp_widget display_value="Homepage Search">200fbd96cb20020000f8d856634c9ca1</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-23 18:07:38</sys_created_on>
+        <sys_id>d5787ac4dbc6e300b25b4a92ba961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer Service</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sp_instance_d5787ac4dbc6e300b25b4a92ba961979</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-23 18:07:38</sys_updated_on>
+        <title>Customer Service</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=d5787ac4dbc6e300b25b4a92ba961979"/>
+</record_update>

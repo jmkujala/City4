@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>true</actions_access>
+        <alter_access>true</alter_access>
+        <caller_access/>
+        <client_scripts_access>true</client_scripts_access>
+        <configuration_access>true</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>true</delete_access>
+        <extension_model/>
+        <is_extendable>false</is_extendable>
+        <label>Weather Station</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_snc_smart_traffi_weather_station</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <super_class display_value="Configuration Item" name="cmdb_ci">5b03063adb312300f00ddf8b4b961969</super_class>
+        <sys_class_code>$W</sys_class_code>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path>/!!/$W</sys_class_path>
+        <sys_created_by>miika.rautio@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 09:00:48</sys_created_on>
+        <sys_id>15c4825cdbc62700b25b4a92ba9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weather Station</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_db_object_15c4825cdbc62700b25b4a92ba9619b4</sys_update_name>
+        <sys_updated_by>miika.rautio@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 09:00:48</sys_updated_on>
+        <update_access>true</update_access>
+        <user_role display_value="x_snc_smart_traffi.weather_station_user" name="x_snc_smart_traffi.weather_station_user">30e4c25cdbc62700b25b4a92ba96192e</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>

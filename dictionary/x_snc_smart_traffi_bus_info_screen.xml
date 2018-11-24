@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_ci" label="Bus Info Screen" max_length="40" name="x_snc_smart_traffi_bus_info_screen" sizeclass="4" type="collection"/>
+</database>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Trips" max_length="40" name="x_snc_smart_traffi_trips_import" sizeclass="18228" type="collection">
+        <element attributes="import_attribute_name=block_id" label="block_id" max_length="40" name="u_block_id" type="integer"/>
+        <element attributes="import_attribute_name=direction_id" label="direction_id" max_length="40" name="u_direction_id" type="integer"/>
+        <element attributes="import_attribute_name=route_id,edge_encryption_enabled=true" label="route_id" max_length="40" name="u_route_id" type="string"/>
+        <element attributes="import_attribute_name=service_id,edge_encryption_enabled=true" label="service_id" max_length="40" name="u_service_id" type="string"/>
+        <element attributes="import_attribute_name=shape_id" label="shape_id" max_length="40" name="u_shape_id" type="float"/>
+        <element attributes="import_attribute_name=trip_headsign,edge_encryption_enabled=true" label="trip_headsign" max_length="40" name="u_trip_headsign" type="string"/>
+        <element attributes="import_attribute_name=trip_id,edge_encryption_enabled=true" label="trip_id" max_length="40" name="u_trip_id" type="string"/>
+        <element attributes="import_attribute_name=wheelchair_accessible" label="wheelchair_accessible" max_length="40" name="u_wheelchair_accessible" type="integer"/>
+    </element>
+</database>

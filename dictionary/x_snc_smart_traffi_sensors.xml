@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_ci" label="Sensors" max_length="40" name="x_snc_smart_traffi_sensors" sizeclass="18" type="collection"/>
+</database>

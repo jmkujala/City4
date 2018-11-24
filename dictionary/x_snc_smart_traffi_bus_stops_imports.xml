@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="bus stops imports" max_length="40" name="x_snc_smart_traffi_bus_stops_imports" type="collection">
+        <element attributes="import_attribute_name=stop_code" label="stop_code" max_length="40" name="u_stop_code" type="integer"/>
+        <element attributes="import_attribute_name=stop_id" label="stop_id" max_length="40" name="u_stop_id" type="integer"/>
+        <element attributes="import_attribute_name=stop_lat,edge_encryption_enabled=true" label="stop_lat" max_length="40" name="u_stop_lat" type="string"/>
+        <element attributes="import_attribute_name=stop_lon,edge_encryption_enabled=true" label="stop_lon" max_length="40" name="u_stop_lon" type="string"/>
+        <element attributes="import_attribute_name=stop_name,edge_encryption_enabled=true" label="stop_name" max_length="40" name="u_stop_name" type="string"/>
+        <element attributes="import_attribute_name=zone_id,edge_encryption_enabled=true" label="zone_id" max_length="40" name="u_zone_id" type="string"/>
+    </element>
+</database>

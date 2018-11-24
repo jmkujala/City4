@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability>(function execute() {
+    return !gs.hasRole('snc_external') || gs.hasRole('admin');
+})()
+</applicability>
+        <connect_queue/>
+        <description>ITSM conversation to reset passwords</description>
+        <graph>{
+  "goals": {
+    "898e2530f8e140ae86ce6d7dbe8a330a": {
+      "id": "898e2530f8e140ae86ce6d7dbe8a330a",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "Password Reset",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "c744a2b563844df8a56e4f98cbf0b5ba": {
+          "id": "c744a2b563844df8a56e4f98cbf0b5ba",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "607c8e8bb432463b8649acdec73d0336": {
+          "id": "607c8e8bb432463b8649acdec73d0336",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": "Thanks for using our support chat! Have a great day!",
+            "mode": "simple"
+          }
+        },
+        "61ea3e55f28c4b0ebd844b9acfaa0407": {
+          "id": "61ea3e55f28c4b0ebd844b9acfaa0407",
+          "name": "Authentication",
+          "script": "(function execute() {\n    vaVars.user_name = gs.getUserName();\n\t\tvaVars.is_authenticated = '' + (vaVars.user_name != 'guest');\n    return '';\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": "",
+          "isOk": true
+        },
+        "65a42e41c56f42128a327a299b7a7955": {
+          "id": "65a42e41c56f42128a327a299b7a7955",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "a6f56c3a2f6f46a780166cf4a4aae086": {
+          "id": "a6f56c3a2f6f46a780166cf4a4aae086",
+          "stepType": "Prompt",
+          "name": "Email",
+          "prompt": {
+            "value": "Please enter your email address.",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": "",
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "e96b75c8a9dc414bb65e2dcf7d434c05",
+          "isOk": true
+        },
+        "a735689f155e4067bcdffd90cfb8f8e8": {
+          "id": "a735689f155e4067bcdffd90cfb8f8e8",
+          "name": "Find User",
+          "script": "(function execute() {\n\tvar gr = new GlideRecord('sys_user');\n\tgr.addActiveQuery();\n\tgr.addQuery('email', vaInputs.email);\n\tgr.query();\n\t\n\tvaVars.user_found = '' + gr.hasNext();\n\t\n    return '';\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": "",
+          "isOk": true
+        },
+        "05aa1053aa8d49069b9b1917312b21aa": {
+          "id": "05aa1053aa8d49069b9b1917312b21aa",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "f2c1e63d56104c91a5c58c9de8d7f8f8": {
+          "id": "f2c1e63d56104c91a5c58c9de8d7f8f8",
+          "name": "Check Enrollment",
+          "script": "(function execute() {\n\n    function getUser() {\n        if (vaVars.user_name == 'guest') {\n            var gr = new GlideRecord('sys_user');\n            gr.addQuery('email', vaInputs.email);\n            gr.query();\n            gr.next(); \n            return gr.getUniqueValue();\n        }\n        else \n            return vaInputs.user;\n    }\n\n    var gr = new GlideRecord('pwd_enrollment');\n\tgr.addQuery('user', getUser());\n\tgr.addQuery('status', 1);\n\tgr.query();\n\t\n\tvaVars.is_enrolled = '' + gr.hasNext();\n\n    return '';\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": "",
+          "isOk": true
+        },
+        "be0046795b1d4cf898a596054ab9c893": {
+          "id": "be0046795b1d4cf898a596054ab9c893",
+          "stepType": "Prompt",
+          "name": "Repeat Email",
+          "prompt": {
+            "value": "I didn't find your email address. Would you like to enter another?",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": "",
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "68d57ce9599c467eb7aaa15b8ebe339f"
+        },
+        "7eb0c7b7eac04d1ab34331a865abadab": {
+          "id": "7eb0c7b7eac04d1ab34331a865abadab",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "38c8235d1bc94b89821c0dd26ccc86d3": {
+          "id": "38c8235d1bc94b89821c0dd26ccc86d3",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "2f564c4be5a847bd9f6a59c94b2e6fd2": {
+          "id": "2f564c4be5a847bd9f6a59c94b2e6fd2",
+          "stepType": "LinkOutput",
+          "name": "Password Enrollment Link",
+          "url": {
+            "value": "(function execute() {\n    return gs.getProperty('glide.servlet.uri') + '/$pwd_enrollment_form_container.do';\n})()\n",
+            "mode": "script"
+          },
+          "label": {
+            "value": "Password Enrollment Link",
+            "mode": "simple"
+          },
+          "header": {
+            "value": "Sorry, enrollment is required to reset your password. Click below to enroll.",
+            "mode": "simple"
+          },
+          "applicability": ""
+        },
+        "c3b6686f6ba245a49e0c83175629d45d": {
+          "id": "c3b6686f6ba245a49e0c83175629d45d",
+          "name": "Find Password Reset Links",
+          "script": "(function execute() {\n    \n    function getUser() {\n        if (vaVars.user_name == 'guest') {\n            var gr = new GlideRecord('sys_user');\n            gr.addQuery('email', vaInputs.email);\n            gr.query();\n            gr.next(); \n            return gr.getUniqueValue();\n        }\n        else \n            return vaInputs.user;\n    }\n    \n    // Check if User is in a Password Process group\n    function checkIfUserIsInGroup(process, userId) {\n        var process_group = new GlideRecord('pwd_map_proc_to_group');\n        process_group.addQuery('process', process.getUniqueValue());\n        process_group.query();\n        \n        while(process_group.next()) {\n            var grmember = new GlideRecord('sys_user_grmember');\n            grmember.addQuery('user', userId);\n            grmember.addQuery('group', process_group.getValue('user_group'));\n            grmember.query();\n            \n            if(grmember.hasNext()) {\n                return true;\n            }\n        }\n        \n        return false;\n    }\n    \n    var gr = new GlideRecord('pwd_process');\n\tgr.addActiveQuery();\n\tgr.addQuery('public_access', true);\n\tgr.addQuery('enabled_on_chatbot', true);\n\tgr.query();\n\n    var results = [];\n    var index = 0;\n    var userId = getUser();\n    while(gr.next()) {\n        if (gr.getValue('apply_to_all_users') == '1' || checkIfUserIsInGroup(gr, userId)) {\n            results.push(\n                {\n                    'name': gr.getDisplayValue('name'),\n                    'value': '$pwd_reset.do?sysparm_url=' + gr.getValue('url_suffix')\n                }\n            )\n            index++;\n        }\n    }\n    vaVars.pwd_reset_links = JSON.stringify(results);\n\n    return '';\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": ""
+        },
+        "8ddd08fbafdf4a40b321a2ee1584c756": {
+          "id": "8ddd08fbafdf4a40b321a2ee1584c756",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "b4732745d4104d31a4f6678d05539776": {
+          "id": "b4732745d4104d31a4f6678d05539776",
+          "stepType": "LinkOutput",
+          "name": "Password Reset Link",
+          "url": {
+            "value": "(function execute() {\n    var results = JSON.parse(vaVars.pwd_reset_links);\n    var baseURL = gs.getProperty('glide.servlet.uri');\n    return baseURL + '/' + results[parseInt(vaVars.pwd_reset_index)].value;\n})()\n",
+            "mode": "script"
+          },
+          "label": {
+            "value": "Reset your password.",
+            "mode": "simple"
+          },
+          "header": {
+            "value": "(function execute() {\n    var results = JSON.parse(vaVars.pwd_reset_links);\n    return results[parseInt(vaVars.pwd_reset_index)].name;\n})()\n",
+            "mode": "script"
+          },
+          "applicability": "",
+          "isOk": true
+        },
+        "42b555dec15c4c969da185619c270aa4": {
+          "id": "42b555dec15c4c969da185619c270aa4",
+          "name": "Increment Counter",
+          "script": "(function execute() {\n    vaVars.pwd_reset_index = parseInt(vaVars.pwd_reset_index) + 1;\n    return '';\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": ""
+        },
+        "a6546fc160eb48dea54d54aacd04cb76": {
+          "id": "a6546fc160eb48dea54d54aacd04cb76",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "5756b79d94d948f28a44576241c9ed38": {
+          "id": "5756b79d94d948f28a44576241c9ed38",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "5edcd70776b04e99b6fb25c716443c72": {
+          "id": "5edcd70776b04e99b6fb25c716443c72",
+          "stepType": "TextOutput",
+          "name": "Contact Support",
+          "value": {
+            "value": "Sorry, I can't reset your password. Please contact the service desk for help.",
+            "mode": "simple"
+          },
+          "applicability": ""
+        }
+      },
+      "edges": [
+        {
+          "id": "f72011f76535436eab53625d1bc47d05",
+          "edgeType": "Branch",
+          "source": "8ddd08fbafdf4a40b321a2ee1584c756",
+          "target": "5edcd70776b04e99b6fb25c716443c72",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    var results = JSON.parse(vaVars.pwd_reset_links);\n    return results.length == 0;\n})()\n",
+          "label": "Links Not Found"
+        },
+        {
+          "id": "7f1b94fccbe843b481049ad1fd7a6e56",
+          "edgeType": "Edge",
+          "source": "2f564c4be5a847bd9f6a59c94b2e6fd2",
+          "target": "607c8e8bb432463b8649acdec73d0336",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "04210027d01b4dd8bd7014812c72ca2e",
+          "edgeType": "Edge",
+          "source": "c744a2b563844df8a56e4f98cbf0b5ba",
+          "target": "61ea3e55f28c4b0ebd844b9acfaa0407",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9e30f80d52a841519b430d542b2f6eb4",
+          "edgeType": "Edge",
+          "source": "61ea3e55f28c4b0ebd844b9acfaa0407",
+          "target": "65a42e41c56f42128a327a299b7a7955",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7db672422e27487b84f6168aea5b0a8e",
+          "edgeType": "Branch",
+          "source": "65a42e41c56f42128a327a299b7a7955",
+          "target": "f2c1e63d56104c91a5c58c9de8d7f8f8",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return vaVars.is_authenticated == 'true';\n})()\n",
+          "label": "Authenticated"
+        },
+        {
+          "id": "22b6721015974bb391a6cfaa83022c3d",
+          "edgeType": "Branch",
+          "source": "65a42e41c56f42128a327a299b7a7955",
+          "target": "a6f56c3a2f6f46a780166cf4a4aae086",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return vaVars.is_authenticated == 'false';\n})()\n",
+          "label": "Not Authenticated"
+        },
+        {
+          "id": "d832c17494aa4958baf4ca0962ee24e5",
+          "edgeType": "Edge",
+          "source": "a6f56c3a2f6f46a780166cf4a4aae086",
+          "target": "a735689f155e4067bcdffd90cfb8f8e8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cebfab836de54708907cde263e611daa",
+          "edgeType": "Edge",
+          "source": "a735689f155e4067bcdffd90cfb8f8e8",
+          "target": "05aa1053aa8d49069b9b1917312b21aa",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "efcfd9357aa94290a16cf20ed2ff910a",
+          "edgeType": "Branch",
+          "source": "05aa1053aa8d49069b9b1917312b21aa",
+          "target": "f2c1e63d56104c91a5c58c9de8d7f8f8",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return vaVars.user_found == 'true';\n})()\n",
+          "label": "User Found"
+        },
+        {
+          "id": "f276e86eaf2a49deac740d0a85d9a37d",
+          "edgeType": "Branch",
+          "source": "05aa1053aa8d49069b9b1917312b21aa",
+          "target": "be0046795b1d4cf898a596054ab9c893",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return vaVars.user_found == 'false';\n})()\n",
+          "label": "User Not Found"
+        },
+        {
+          "id": "5cd57a40731e449e8a073c89da7d39b8",
+          "edgeType": "Edge",
+          "source": "be0046795b1d4cf898a596054ab9c893",
+          "target": "7eb0c7b7eac04d1ab34331a865abadab",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d8afa1b828cf4461855bc06b03de91e2",
+          "edgeType": "Branch",
+          "source": "7eb0c7b7eac04d1ab34331a865abadab",
+          "target": "a6f56c3a2f6f46a780166cf4a4aae086",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return vaInputs.repeat_email.getValue();\n})()\n",
+          "label": "Enter Email Again"
+        },
+        {
+          "id": "736f43f0b5a849ffafee6901110f97a9",
+          "edgeType": "Branch",
+          "source": "7eb0c7b7eac04d1ab34331a865abadab",
+          "target": "607c8e8bb432463b8649acdec73d0336",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return !vaInputs.repeat_email.getValue();;\n})()\n",
+          "label": "Stop Entering Email"
+        },
+        {
+          "id": "8860857d2b6b453b9ad8a84577bc31a8",
+          "edgeType": "Edge",
+          "source": "f2c1e63d56104c91a5c58c9de8d7f8f8",
+          "target": "38c8235d1bc94b89821c0dd26ccc86d3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9aa943d369e3410ca7d7a565ebf33a10",
+          "edgeType": "Branch",
+          "source": "38c8235d1bc94b89821c0dd26ccc86d3",
+          "target": "c3b6686f6ba245a49e0c83175629d45d",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return vaVars.is_enrolled == 'true';\n})()\n",
+          "label": "Enrolled"
+        },
+        {
+          "id": "08330199450d4309b41badee874321c0",
+          "edgeType": "Edge",
+          "source": "c3b6686f6ba245a49e0c83175629d45d",
+          "target": "8ddd08fbafdf4a40b321a2ee1584c756",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9a514bd631434963aa0929a59da506b3",
+          "edgeType": "Branch",
+          "source": "8ddd08fbafdf4a40b321a2ee1584c756",
+          "target": "b4732745d4104d31a4f6678d05539776",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    var results = JSON.parse(vaVars.pwd_reset_links);\n    return results.length &gt; 0;\n})()\n",
+          "label": "Links Found"
+        },
+        {
+          "id": "3e841422619b41a89a98ce47365623c2",
+          "edgeType": "Edge",
+          "source": "b4732745d4104d31a4f6678d05539776",
+          "target": "42b555dec15c4c969da185619c270aa4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1b5a7434e5824ef3888ab50900bba9cb",
+          "edgeType": "Edge",
+          "source": "42b555dec15c4c969da185619c270aa4",
+          "target": "a6546fc160eb48dea54d54aacd04cb76",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3f4c2e98010345dbac2eda63f7e100ca",
+          "edgeType": "Branch",
+          "source": "a6546fc160eb48dea54d54aacd04cb76",
+          "target": "607c8e8bb432463b8649acdec73d0336",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    var results = JSON.parse(vaVars.pwd_reset_links);\n    return parseInt(vaVars.pwd_reset_index) &gt;= results.length;\n})()\n",
+          "label": "No links left"
+        },
+        {
+          "id": "002e8102f2984a41b96803b3e6d74030",
+          "edgeType": "Branch",
+          "source": "a6546fc160eb48dea54d54aacd04cb76",
+          "target": "b4732745d4104d31a4f6678d05539776",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    var results = JSON.parse(vaVars.pwd_reset_links);\n    return parseInt(vaVars.pwd_reset_index) &lt; results.length;\n})()\n",
+          "label": "Next link"
+        },
+        {
+          "id": "cf306a0e06a146b3a2718e6f189d24ab",
+          "edgeType": "Branch",
+          "source": "38c8235d1bc94b89821c0dd26ccc86d3",
+          "target": "5756b79d94d948f28a44576241c9ed38",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return vaVars.is_enrolled == 'false';\n})()\n",
+          "label": "Not Enrolled"
+        },
+        {
+          "id": "c00e62f6e5d2441ba6108b0c8e0de083",
+          "edgeType": "Branch",
+          "source": "5756b79d94d948f28a44576241c9ed38",
+          "target": "2f564c4be5a847bd9f6a59c94b2e6fd2",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return vaVars.is_authenticated == 'true';;\n})()\n",
+          "label": "Authenticated"
+        },
+        {
+          "id": "6b0e5136fa184c4aa250bb7c4c1c3443",
+          "edgeType": "Branch",
+          "source": "5756b79d94d948f28a44576241c9ed38",
+          "target": "5edcd70776b04e99b6fb25c716443c72",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": "(function execute() {\n    return vaVars.is_authenticated != 'true';\n})()\n",
+          "label": "Not Authenticated"
+        },
+        {
+          "id": "a8201775060141cda6f72a05adcac45a",
+          "edgeType": "Edge",
+          "source": "5edcd70776b04e99b6fb25c716443c72",
+          "target": "607c8e8bb432463b8649acdec73d0336",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "graph_api_version": "1.0.3",
+  "variables": {
+    "b6f8bc13f08546f79aedb7d56b7ca666": {
+      "id": "b6f8bc13f08546f79aedb7d56b7ca666",
+      "name": "is_authenticated",
+      "label": "is_authenticated",
+      "varType": "script",
+      "value": {
+        "value": "false",
+        "mode": "simple"
+      }
+    },
+    "4d39fbf6e3b74c75b299d724009305fe": {
+      "id": "4d39fbf6e3b74c75b299d724009305fe",
+      "name": "is_enrolled",
+      "label": "is_enrolled",
+      "varType": "script",
+      "value": {
+        "value": "false",
+        "mode": "simple"
+      }
+    },
+    "e96b75c8a9dc414bb65e2dcf7d434c05": {
+      "id": "e96b75c8a9dc414bb65e2dcf7d434c05",
+      "name": "email",
+      "label": "Email",
+      "varType": "string"
+    },
+    "de5adddfde834b99a2e29072ad92b0ef": {
+      "id": "de5adddfde834b99a2e29072ad92b0ef",
+      "name": "user_found",
+      "label": "user_found",
+      "varType": "script",
+      "value": {
+        "value": "false",
+        "mode": "simple"
+      }
+    },
+    "68d57ce9599c467eb7aaa15b8ebe339f": {
+      "id": "68d57ce9599c467eb7aaa15b8ebe339f",
+      "name": "repeat_email",
+      "label": "Repeat Email",
+      "varType": "boolean"
+    },
+    "9c4d867ca600428da2a4cb736f22b14f": {
+      "id": "9c4d867ca600428da2a4cb736f22b14f",
+      "name": "pwd_reset_links",
+      "label": "pwd_reset_links",
+      "varType": "script"
+    },
+    "5cb1bacd43414ab2a35bfb469a15cc89": {
+      "id": "5cb1bacd43414ab2a35bfb469a15cc89",
+      "name": "pwd_reset_index",
+      "label": "pwd_reset_index",
+      "varType": "script",
+      "value": {
+        "value": "0",
+        "mode": "simple"
+      }
+    },
+    "c6f83a34604e40fd974db273d740aa59": {
+      "id": "c6f83a34604e40fd974db273d740aa59",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "user_name",
+      "label": "user_name",
+      "varType": "script"
+    },
+    "19c6d8876a59411596455b3fa8418069": {
+      "id": "19c6d8876a59411596455b3fa8418069",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": "itsm"
+      },
+      "varType": "script",
+      "label": "LiveAgent_application"
+    }
+  }
+}</graph>
+        <key_phrases>Temperature in bus,locked out,password,forgot,reset</key_phrases>
+        <live_agent>false</live_agent>
+        <name>Temperature in bus</name>
+        <roles>public</roles>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 09:21:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>68998a14db0a2700b25b4a92ba961910</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Temperature in bus</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_cb_topic_68998a14db0a2700b25b4a92ba961910</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 16:38:06</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=68998a14db0a2700b25b4a92ba961910"/>
+</record_update>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>body .padding-top{&#13;
+  padding-top: 0px;&#13;
+  font-family: 'SourceSansPro', 'Roboto', Helvetica, Arial, sans-serif;&#13;
+}&#13;
+&#13;
+section.page, section.body {&#13;
+  padding-top: 0px !important;&#13;
+}&#13;
+&#13;
+.csm-homesearch-container {&#13;
+  border-radius: 4px;&#13;
+}&#13;
+&#13;
+.csm-homesearch-sub-container {&#13;
+  padding: 0px 30px 0px 0px;&#13;
+}&#13;
+&#13;
+.csm-center-col {&#13;
+  border-right: 1px solid #CACACA;&#13;
+  border-left: 1px solid #CACACA;&#13;
+}&#13;
+&#13;
+</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>bike_front</id>
+        <internal>false</internal>
+        <public>true</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-23 18:29:48</sys_created_on>
+        <sys_id>c28df240db0ae300b25b4a92ba9619d5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>bike_front</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sp_page_c28df240db0ae300b25b4a92ba9619d5</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 13:36:19</sys_updated_on>
+        <title>Bike Front</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=c28df240db0ae300b25b4a92ba9619d5"/>
+</record_update>

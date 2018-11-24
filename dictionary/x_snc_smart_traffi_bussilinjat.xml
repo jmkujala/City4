@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="bussilinjat" max_length="40" name="x_snc_smart_traffi_bussilinjat" type="collection">
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="import_attribute_name=FID,edge_encryption_enabled=true" label="FID" max_length="40" name="u_fid" type="string"/>
+        <element attributes="import_attribute_name=GEOLOC,edge_encryption_enabled=true" label="GEOLOC" max_length="24534" name="u_geoloc" type="string"/>
+        <element attributes="import_attribute_name=MI_PRINX,edge_encryption_enabled=true" label="MI_PRINX" max_length="40" name="u_mi_prinx" type="string"/>
+        <element attributes="import_attribute_name=REITTI,edge_encryption_enabled=true" label="REITTI" max_length="40" name="u_reitti" type="string"/>
+    </element>
+</database>

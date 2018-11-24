@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Driver log" max_length="40" name="x_snc_smart_traffi_driver_log" sizeclass="3" type="collection">
+        <element label="Bus stop" max_length="32" name="busstop" reference="x_snc_smart_traffi_bus_stop" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" max_length="40" name="category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Vehicle" sequence="0" value="Vehicle"/>
+                <element inactive_on_update="false" label="Bus stop" sequence="1" value="Bus stop"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="category" dependent_on_field="category" label="Subcategory" max_length="40" name="subcategory" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element label="Trip ID" max_length="32" name="tipd" reference="x_snc_smart_traffi_trip" type="reference"/>
+        <element label="New Reference" max_length="32" name="u_reference_1" reference="sa_metric_anomaly_test_result" type="reference"/>
+        <element label="Vehicle" max_length="32" name="vehicle" reference="x_snc_smart_traffi_vehicle" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Stop" max_length="40" name="x_snc_smart_traffi_stop" sizeclass="669194" text_index="true" type="collection">
+        <element label="Arrival time" max_length="100" name="arrival_time" type="glide_time"/>
+        <element label="Departure time" max_length="40" name="departure_time" type="glide_time"/>
+        <element label="Stop ID" max_length="40" name="stop_id" reference="x_snc_smart_traffi_bus_stop" type="reference"/>
+        <element label="Trip ID" max_length="100" name="trip_id" reference="x_snc_smart_traffi_trip" type="reference"/>
+    </element>
+</database>

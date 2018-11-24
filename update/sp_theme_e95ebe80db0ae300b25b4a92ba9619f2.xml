@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>$csm-primary-text-size: 14px;&#13;
+$csm-danger-bg: #FAE6E6;&#13;
+$csm-danger-dark: #9D0010;&#13;
+$csm-danger-light: #E34249;&#13;
+$csm-border-color: #E6E8EA;&#13;
+$csm-danger-border: #F7D8D8;&#13;
+$csm-box-shadow : #CFD4D8;&#13;
+$csm-icon-color: #CFD4D8;&#13;
+$csm-navbar-popover-box-shadow-color: #CFD4D8;&#13;
+$csm-navbar-popover-separator-line-color: #E6E8EA;&#13;
+$csm-navbar-global-user-profile-dropdown-border: #DDDDDD;&#13;
+$csm-navbar-panel-separator-color: #828890;&#13;
+$csm-tags-bg: #E6E8EA;&#13;
+$csm-author-badge-bg: #6D79E8;&#13;
+$csm-well-bg: #F9F9F9;&#13;
+$csm-well-success : #F0FBF0;&#13;
+$csm-profile-privacy-select-readonly-bg: #EEEEEE;&#13;
+$search-link-color: $brand-primary;&#13;
+$search-alternate-text-color: #D45049;&#13;
+$search-primary-text-size: 13px;&#13;
+$csm-secondary-header-bg:#D45049;&#13;
+$csm-navbar-bg:#D45049;&#13;
+&#13;
+</css_variables>
+        <footer display_value="CSM Unified Portal Footer">7f1a61473b643200367aee1234efc4e6</footer>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="CSM Unified Portal Header">451ffe6e3b103200367aee1234efc415</header>
+        <name>Bicycle Default</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-23 18:33:19</sys_created_on>
+        <sys_id>e95ebe80db0ae300b25b4a92ba9619f2</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Bicycle Default</sys_name>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sp_theme_e95ebe80db0ae300b25b4a92ba9619f2</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 13:44:37</sys_updated_on>
+    </sp_theme>
+</record_update>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot display_value="Create Record">2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Alert from Case">4b4573dcdbca6700f00ddf8b4b961984</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 17:14:22</sys_created_on>
+        <sys_id>76d57fdcdbca6700f00ddf8b4b961955</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_hub_action_instance_76d57fdcdbca6700f00ddf8b4b961955</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:30:56</sys_updated_on>
+        <ui_id>fafed20c-3e50-4eb6-aefe-f2a14ecdf344</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=76d57fdcdbca6700f00ddf8b4b961955"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>76d57fdcdbca6700f00ddf8b4b961955</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 18:04:10</sys_created_on>
+        <sys_id>18410ce0db866700b25b4a92ba961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:04:10</sys_updated_on>
+        <value>em_alert</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>76d57fdcdbca6700f00ddf8b4b961955</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 17:14:22</sys_created_on>
+        <sys_id>7ed57fdcdbca6700f00ddf8b4b961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lasse.tuomi@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 17:14:22</sys_updated_on>
+        <value>em_alert</value>
+        <variable display_value="">0352fc8cc3c632002841b63b12d3ae12</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=76d57fdcdbca6700f00ddf8b4b961955"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>76d57fdcdbca6700f00ddf8b4b961955</id>
+        <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 17:14:22</sys_created_on>
+        <sys_id>b2d57fdcdbca6700f00ddf8b4b961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lasse.tuomi@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 17:14:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_02f0b88cc3c632002841b63b12d3aeff</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>76d57fdcdbca6700f00ddf8b4b961955</id>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 18:04:10</sys_created_on>
+        <sys_id>dc410ce0db866700b25b4a92ba961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:04:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>76d57fdcdbca6700f00ddf8b4b961955</id>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 18:04:10</sys_created_on>
+        <sys_id>94410ce0db866700b25b4a92ba961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:04:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>cmdb_ci={"display":"BusInfoScreen3","value":"9f7e6350dbc26700b25b4a92ba96193d"}^short_description={{Created_1.current.short_description}}^metric_name=Info screen^description={{Created_1.current.description}}^severity=3</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>76d57fdcdbca6700f00ddf8b4b961955</id>
+        <sys_created_by>lasse.tuomi@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 17:14:22</sys_created_on>
+        <sys_id>fad57fdcdbca6700f00ddf8b4b961968</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>lasse.tuomi@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 17:21:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_02f0b88cc3c632002841b63b12d3aeff</table>
+        <value>cmdb_ci={"display":"BusInfoScreen3","value":"9f7e6350dbc26700b25b4a92ba96193d"}^short_description={{Created_1.current.short_description}}^metric_name=Info screen^description={{Created_1.current.description}}^severity=3</value>
+    </sys_element_mapping>
+</record_update>

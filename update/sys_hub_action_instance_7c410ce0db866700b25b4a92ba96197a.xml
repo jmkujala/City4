@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment/>
+        <compiled_snapshot display_value="Create Task">2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Alert from Case">28410ce0db866700b25b4a92ba961937</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 18:04:12</sys_created_on>
+        <sys_id>7c410ce0db866700b25b4a92ba96197a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart traffic" source="x_snc_smart_traffi">c9532e04db4ae300f00ddf8b4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart traffic">c9532e04db4ae300f00ddf8b4b961924</sys_scope>
+        <sys_update_name>sys_hub_action_instance_7c410ce0db866700b25b4a92ba96197a</sys_update_name>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:29:34</sys_updated_on>
+        <ui_id>1219889f-28f1-41e6-a622-4c546dab9da5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7c410ce0db866700b25b4a92ba96197a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7c410ce0db866700b25b4a92ba96197a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 18:04:12</sys_created_on>
+        <sys_id>b0410ce0db866700b25b4a92ba961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:04:12</sys_updated_on>
+        <value>wm_task</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7c410ce0db866700b25b4a92ba96197a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>7c410ce0db866700b25b4a92ba96197a</id>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 18:04:12</sys_created_on>
+        <sys_id>30410ce0db866700b25b4a92ba961980</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:29:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>location={{b4abdd8b-e8e9-4ae6-a2b6-74bc0f70e694.Record.location}}^short_description={{b4abdd8b-e8e9-4ae6-a2b6-74bc0f70e694.Record.short_description}}^parent={{b4abdd8b-e8e9-4ae6-a2b6-74bc0f70e694.Record}}^dispatch_group={"display":"Smart Dispatchers","value":"65d9f63237232000158bbfc8bcbe5dc4"}^assignment_group={"display":"South East","value":"f304ae0037332000158bbfc8bcbe5d4f"}^assigned_to={"display":"Valerie Pou","value":"0e826bf03710200044e0bfc8bcbe5d6a"}^state=10</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>7c410ce0db866700b25b4a92ba96197a</id>
+        <sys_created_by>juha.kujala@sofigate.com</sys_created_by>
+        <sys_created_on>2018-11-24 18:04:12</sys_created_on>
+        <sys_id>7c410ce0db866700b25b4a92ba96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>juha.kujala@sofigate.com</sys_updated_by>
+        <sys_updated_on>2018-11-24 18:04:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>
